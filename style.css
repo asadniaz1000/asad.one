@@ -1,40 +1,57 @@
+/* Colors https://coolors.co/2e3532-7e9181-c7cedb-a0aab2-94849b */
+
 html body {
   font-family: "Open Sans", sans-serif;
   /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 100%; */
+  /* margin: 0px; */
+  /* padding: 0px; */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .Body {
-  background-color: rgba(0, 232, 255, 0.2);
+  /* background-color: #a8dadc; */
+  background-color: #c7cedb;
+  color: #2e3532;
 }
 
 .All {
   /* max-width: 50%; */
-  display: flex;
-  flex-direction: row;
-  height: 80%;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* height: 80%; */
 }
 
 .Intro,
 .Details {
-  margin: 5px;
-  max-width: 375px;
+  /* margin: 20px; */
+  /* max-width: 375px; */
   /* max-width: 50%; */
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* padding: 20px; */
 }
 
 .Intro {
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
-  justify-content: center;
-  flex: 1;
+  /* justify-content: center; */
+  /* flex: 1; */
+  float: left;
+  width: 20%;
+  background-color: #94849B;
+  margin: 20px;
+  padding: 20px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  
 }
 
 .Me-Pic {
@@ -43,11 +60,20 @@ html body {
 
 .Name {
   font-family: "Roboto", sans-serif;
-  margin-bottom: 2px;
+  padding: 20px;
 }
 
 .Details {
-  flex: 3;
+  /* flex: 3; */
+  float: left;
+  width: 70%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #94849B;
+}
+
+.Description {
+  /* background-color: #94849B; */
 }
 .Social {
   list-style: none;
@@ -62,8 +88,21 @@ html body {
 .Social a {
   text-decoration: none;
   padding: 4px;
+  background-color: #a0aab2;
 }
 
 .Social a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Social a:visited {
+  color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  .Intro,
+  .Details {
+    width: fit-content; /* The width is 100%, when the viewport is 800px or smaller */
+    
+  }
 }
