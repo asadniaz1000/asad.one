@@ -1,5 +1,4 @@
 html body {
-  /* font-family: "Magra", sans-serif; */
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
@@ -14,7 +13,6 @@ html body {
 }
 
 .All {
-  /* background-color: teal; */
   max-width: 50%;
   display: flex;
   flex-direction: row;
@@ -23,7 +21,6 @@ html body {
 
 .Intro,
 .Details {
-  /* background-color: thistle; */
   margin: 5px;
   max-width: 50%;
   flex: 1;
@@ -53,7 +50,6 @@ html body {
 }
 
 .Social li {
-  /* display: inline-block; */
   margin-right: 8px;
 }
 
